@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Section</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          Discuss the scope of var, let, and const.
+        </div>
+        <div class="collapse-content">
+          <p>
+            JavaScript variables, when declared using `var`, have function
+            scope, making them accessible throughout the entire function,
+            including within conditional blocks and loops. They are also hoisted
+            to the top of their containing function. In contrast, `let` and
+            `const` introduce block scope, confining their accessibility to the
+            block in which they are defined, such as a function, loop, or `if`
+            statement. `let` and `const` variables are not hoisted, and
+            accessing them before declaration results in a `ReferenceError`.
+            `const` additionally enforces a constant value after initialization,
+            promoting safer coding practices. In modern JavaScript, `let` and
+            `const` are preferred for their well-defined scoping rules, while
+            `var` is used less frequently due to its less predictable function
+            scope and hoisting behavior.
+          </p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          Tell us the use cases of null and undefined.
+        </div>
+        <div class="collapse-content">
+          <p>
+            In JavaScript, both `null` and `undefined` serve specific purposes
+            in handling the absence of values. `null` is typically employed when
+            you want to explicitly indicate that a variable or property has no
+            value or that you've intentionally assigned it to represent
+            "nothing." It can be a deliberate choice to signify the absence of a
+            meaningful value in your code. On the other hand, `undefined` often
+            arises as the default value for variables that have not been
+            initialized or for properties that do not exist in an object. It can
+            also indicate the absence of a return value from a function when no
+            value is explicitly returned. Understanding when to use `null` and
+            when `undefined` occurs naturally is essential for writing clean and
+            robust JavaScript code, as it helps convey the intended state of
+            your program's data.
+          </p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">
+          What do you mean by REST API?
+        </div>
+        <div class="collapse-content">
+          <p>
+            A REST API, or Representational State Transfer Application
+            Programming Interface, is a fundamental architectural style for
+            designing web services that interact with each other over the
+            internet. It adheres to a set of principles and constraints that
+            emphasize simplicity, scalability, and compatibility with the HTTP
+            protocol. In a RESTful API, resources are central, identified by
+            unique URIs, and manipulated using standard HTTP methods like GET,
+            POST, PUT, and DELETE, making it a robust foundation for creating
+            CRUD (Create, Read, Update, Delete) operations. One key
+            characteristic of REST is its statelessness, meaning each request
+            from a client to a server contains all the necessary information,
+            and the server doesn't rely on past interactions. Additionally, REST
+            APIs support multiple data representations, making them versatile
+            for various client needs. This architectural style has gained
+            widespread adoption due to its effectiveness in enabling different
+            applications and systems to communicate seamlessly and share
+            resources on the web while maintaining a clear and organized
+            structure.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
